@@ -1,0 +1,237 @@
+/* =====================================================
+   CONFIGURAÇÕES GERAIS
+   ===================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 15px;
+
+    font-family: Arial, sans-serif;
+
+    background: #111;
+    color: #fff;
+
+    text-align: center;
+}
+
+
+/* =====================================================
+   CONTAINER
+   ===================================================== */
+
+.container {
+    width: 100%;
+    max-width: 600px;
+
+    margin: 0 auto;
+}
+
+
+/* =====================================================
+   TÍTULO
+   ===================================================== */
+
+h1 {
+    margin: 10px 0 30px;
+
+    color: #ffeb3b;
+
+    font-size: 28px;
+    font-weight: bold;
+
+    text-shadow:
+        2px 2px 0 #000;
+}
+
+
+/* =====================================================
+   PLACAR
+   ===================================================== */
+
+.placar-container {
+    width: 100%;
+}
+
+
+/* =====================================================
+   TABELA
+   ===================================================== */
+
+.leaderboard-table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    background: #181818;
+
+    border: 1px solid #444;
+
+    box-shadow:
+        0 0 20px rgba(255, 235, 59, 0.08);
+}
+
+
+/* Cabeçalho */
+
+.leaderboard-table th {
+    padding: 14px 10px;
+
+    background: #222;
+
+    color: #ffeb3b;
+
+    border: 1px solid #444;
+
+    font-size: 15px;
+}
+
+
+/* Células */
+
+.leaderboard-table td {
+    padding: 13px 10px;
+
+    border: 1px solid #444;
+
+    font-size: 15px;
+}
+
+
+/* Linhas alternadas */
+
+.leaderboard-table tbody tr:nth-child(even) {
+    background: #202020;
+}
+
+
+/* Efeito ao passar o mouse */
+
+.leaderboard-table tbody tr:hover {
+    background: #292929;
+}
+
+
+/* =====================================================
+   POSIÇÃO
+   ===================================================== */
+
+.leaderboard-table td:first-child {
+    width: 100px;
+
+    color: #ffeb3b;
+
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   TEMPO
+   ===================================================== */
+
+.tempo {
+    color: #00ff88;
+
+    font-family: monospace;
+
+    font-size: 16px;
+
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   MENSAGENS
+   ===================================================== */
+
+.mensagem {
+    padding: 20px !important;
+
+    color: #aaa;
+}
+
+
+/* =====================================================
+   ERRO
+   ===================================================== */
+
+.erro {
+    padding: 20px !important;
+
+    color: #ff5555;
+}
+
+
+/* =====================================================
+   BOTÃO
+   ===================================================== */
+
+.botao-atualizar {
+    margin-top: 20px;
+
+    padding: 11px 20px;
+
+    border: none;
+    border-radius: 6px;
+
+    background: #ffeb3b;
+
+    color: #111;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s,
+        transform 0.1s;
+}
+
+
+.botao-atualizar:hover {
+    background: #fff176;
+}
+
+
+.botao-atualizar:active {
+    transform: scale(0.97);
+}
+
+
+.botao-atualizar:disabled {
+    opacity: 0.6;
+
+    cursor: not-allowed;
+}
+
+
+/* =====================================================
+   CELULAR
+   ===================================================== */
+
+@media (max-width: 500px) {
+
+    body {
+        padding: 20px 10px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .leaderboard-table th,
+    .leaderboard-table td {
+        padding: 10px 6px;
+
+        font-size: 13px;
+    }
+
+    .tempo {
+        font-size: 14px;
+    }
+
+}
