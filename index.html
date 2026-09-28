@@ -1,9 +1,9 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Placar Pixel Art</title>
@@ -20,27 +20,14 @@
 
         <div class="placar-container">
 
-            <table class="leaderboard-table">
+            <!-- Container onde o JavaScript irá inserir os jogadores -->
+            <div id="placar-corpo" class="leaderboard-list">
 
-                <thead>
-                    <tr>
-                        <th>Posição</th>
-                        <th>Jogador</th>
-                        <th>Tempo</th>
-                    </tr>
-                </thead>
+                <div class="mensagem-placar">
+                    ⏳ Carregando tempos...
+                </div>
 
-                <tbody id="placar-corpo">
-
-                    <tr>
-                        <td colspan="3" class="mensagem">
-                            ⏳ Carregando tempos...
-                        </td>
-                    </tr>
-
-                </tbody>
-
-            </table>
+            </div>
 
             <button
                 id="botao-atualizar"
@@ -50,11 +37,8 @@
             </button>
 
         </div>
-
-        <iframe src="Jogo Good HTML5/index.html" width="800" height="600" style="border:none;"></iframe>
-
+<iframe src="Jogo Good HTML5/index.html" width="800" height="400" style="border:none;"></iframe>
     </main>
-
 
     <!-- JavaScript -->
     <script src="script.js"></script>
@@ -62,3 +46,4 @@
 </body>
 
 </html>
+
